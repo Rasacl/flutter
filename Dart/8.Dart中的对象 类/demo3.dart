@@ -4,9 +4,12 @@
 * 如果你想定义一个私有的变量、方法、类，在变量、方法、类前面加上 _ 下划线即可
 * */
 
-// import 'lib/Animal.dart';
-// void main() {
-//   Animal a = new Animal("旺财", 3);
-//   a.printInfo();
-//   // a._run(); // 私有方法不能访问
-// }
+import 'lib/Animal.dart';
+void main() {
+  Animal a = new Animal('小黑', 20);
+  a.printInfo();
+  // print(a._name); // 私有属性不可以访问
+  // a._run(); // 私有方法不能访问
+  print(a.getName());
+  a.execRun();
+}

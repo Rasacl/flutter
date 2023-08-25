@@ -5,7 +5,13 @@ class Animal {
   void printInfo() {
     print("${this._name}----${this.age}");
   }
-  // void _run() {
-  //   print("这是一个私有方法");
-  // }
+  void _run() {
+    print("这是一个私有方法");
+  }
+ String getName() {
+    return this._name;
+  }
+  execRun() {
+    this._run();
+  }
 }
